@@ -1,0 +1,428 @@
+<!DOCTYPE html><html><head>
+      <title>数据清单</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/jiaqingfang/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.20/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      pre{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;padding:1em;margin:.5em 0;overflow:auto;line-height:1.5;tab-size:4;hyphens:none;color:#657b83;background-color:#fbedc6!important;border:#f8de97;border-radius:3px}pre[class*=language-]{padding:1em}code[class*=language-] .token.cdata,code[class*=language-] .token.comment,code[class*=language-] .token.doctype,code[class*=language-] .token.prolog,pre[class*=language-] .token.cdata,pre[class*=language-] .token.comment,pre[class*=language-] .token.doctype,pre[class*=language-] .token.prolog{color:#93a1a1;font-style:italic}code[class*=language-] .token.punctuation,pre[class*=language-] .token.punctuation{color:#93a1a1}code[class*=language-] .namespace,pre[class*=language-] .namespace{opacity:.7}code[class*=language-] .token.property,pre[class*=language-] .token.property{color:#859900}code[class*=language-] .token.boolean,code[class*=language-] .token.function-name,code[class*=language-] .token.number,pre[class*=language-] .token.boolean,pre[class*=language-] .token.function-name,pre[class*=language-] .token.number{color:#d33682}code[class*=language-] .token.tag,pre[class*=language-] .token.tag{color:#268bd2}code[class*=language-] .token.selector,pre[class*=language-] .token.selector{color:#859900}code[class*=language-] .token.attr-name,pre[class*=language-] .token.attr-name{color:#657b83}code[class*=language-] .token.string,pre[class*=language-] .token.string{color:#2aa198}code[class*=language-] .token.char,pre[class*=language-] .token.char{color:#cb4b16}code[class*=language-] .token.builtin,pre[class*=language-] .token.builtin{color:#859900}code[class*=language-] .token.entity,pre[class*=language-] .token.entity{color:#268bd2}code[class*=language-] .token.url,pre[class*=language-] .token.url{color:#93a1a1}code[class*=language-] .token.atrule,code[class*=language-] .token.attr-value,code[class*=language-] .token.keyword,pre[class*=language-] .token.atrule,pre[class*=language-] .token.attr-value,pre[class*=language-] .token.keyword{color:#859900}code[class*=language-] .token.function,pre[class*=language-] .token.function{color:#268bd2}code[class*=language-] .token.class-name,pre[class*=language-] .token.class-name{color:#268bd2}code[class*=language-] .token.variable,pre[class*=language-] .token.variable{color:#268bd2}code[class*=language-] .token.important,code[class*=language-] .token.regex,pre[class*=language-] .token.important,pre[class*=language-] .token.regex{color:#dc322f}code[class*=language-] .token.bold,code[class*=language-] .token.important,pre[class*=language-] .token.bold,pre[class*=language-] .token.important{font-weight:700}code[class*=language-] .token.italic,pre[class*=language-] .token.italic{font-style:italic}code[class*=language-] .token.entity,pre[class*=language-] .token.entity{cursor:help}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#555;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#030303}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#7e7e7e}html body strong{color:#030303}html body del{color:#7e7e7e}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#7e7e7e;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#030303}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#030303;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#030303;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#030303;page-break-after:avoid}html body blockquote{color:#7e7e7e}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h2 id="项目数据需求清单">项目数据需求清单 </h2>
+<table>
+<thead>
+<tr>
+<th>数据名称</th>
+<th>数据内容</th>
+<th>输入步骤</th>
+<th>输入模型/方法</th>
+<th>时间跨度</th>
+<th>频率</th>
+<th>数据源</th>
+<th>是否获取</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>第一步：基础市场数据（价格/利率时间序列）</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SX5E价格</td>
+<td>EURO STOXX 50指数价格（欧元计价）</td>
+<td>Phase 0 - 基础数据</td>
+<td>所有方法</td>
+<td>2020-2024（或3-5年）</td>
+<td>日频</td>
+<td><a href="https://finance.yahoo.com/quote/%5ESTOXX50E/history/?period1=1577836800&amp;period2=1763932841">https://finance.yahoo.com/quote/^STOXX50E/history/?period1=1577836800&amp;period2=1763932841</a></td>
+<td></td>
+<td>最新值作为S(0)，全序列用于计算波动率和相关性</td>
+</tr>
+<tr>
+<td>EUR/USD汇率</td>
+<td>欧元兑美元即期汇率</td>
+<td>Phase 0 - 基础数据</td>
+<td>所有方法</td>
+<td>2020-2024（或3-5年）</td>
+<td>日频</td>
+<td><a href="https://finance.yahoo.com/quote/EURUSD%3DX/history/?period1=1577836800&amp;period2=1763933164">https://finance.yahoo.com/quote/EURUSD%3DX/history/?period1=1577836800&amp;period2=1763933164</a></td>
+<td></td>
+<td>最新值用于转换S(0)，全序列用于计算波动率和相关性</td>
+</tr>
+<tr>
+<td>3个月USD即期利率</td>
+<td>3个月Treasury Bill或SOFR利率</td>
+<td>Phase 0 - 基础数据</td>
+<td>所有方法</td>
+<td>2020-2024（或3-5年）</td>
+<td>日频</td>
+<td></td>
+<td></td>
+<td>最新值用于r(0)，全序列用于计算相关性</td>
+</tr>
+<tr>
+<td>USD利率曲线</td>
+<td>各期限零息利率/收益率（3M, 6M, 1Y, 2Y, 3Y, 3.25Y, 5Y等）</td>
+<td>Phase 0 - 基础数据，Phase 1 - 利率建模</td>
+<td>Hull-White（必需），LMM（可选）</td>
+<td>最近日期</td>
+<td>单一时点（最新）</td>
+<td><a href="https://fred.stlouisfed.org/release/tables?eid=212994&amp;rid=354">https://fred.stlouisfed.org/release/tables?eid=212994&amp;rid=354</a></td>
+<td></td>
+<td>用于推导L(0,T,T+Δ)，校准Hull-White的θ(t)，计算P(0,T+Δ)</td>
+</tr>
+<tr>
+<td><strong>第二步：期权市场数据（波动率）</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SX5E期权隐含波动率</td>
+<td>ATM期权隐含波动率，期限2-3年</td>
+<td>Phase 0 - 波动率参数</td>
+<td>所有方法（股指建模）</td>
+<td>最近日期</td>
+<td>单一时点（最新）</td>
+<td></td>
+<td></td>
+<td>优先使用；若无，改用历史价格计算历史波动率</td>
+</tr>
+<tr>
+<td>EUR/USD期权隐含波动率</td>
+<td>ATM FX期权隐含波动率，期限2-3年</td>
+<td>Phase 0 - 波动率参数</td>
+<td>所有方法（quanto adjustment）</td>
+<td>最近日期</td>
+<td>单一时点（最新）</td>
+<td></td>
+<td></td>
+<td>优先使用；若无，改用历史汇率计算历史波动率</td>
+</tr>
+<tr>
+<td>USD Cap隐含波动率</td>
+<td>3年期cap的隐含波动率</td>
+<td>Phase 1 - Hull-White校准</td>
+<td>Hull-White</td>
+<td>最近日期</td>
+<td>单一时点（最新）</td>
+<td></td>
+<td></td>
+<td>用于校准a和σ；若无，用文献典型值</td>
+</tr>
+<tr>
+<td>USD Swaption隐含波动率</td>
+<td>ATM swaption波动率（可选，辅助）</td>
+<td>Phase 1 - Hull-White校准</td>
+<td>Hull-White</td>
+<td>最近日期</td>
+<td>单一时点（最新）</td>
+<td></td>
+<td></td>
+<td>辅助校准；可用cap替代</td>
+</tr>
+<tr>
+<td><strong>第三步：利率模型专用数据</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>远期利率历史</td>
+<td>L(t,T,T+Δ)的历史时间序列</td>
+<td>Phase 1 - LMM参数估计</td>
+<td>LIBOR Market Model</td>
+<td>2020-2024（或3-5年）</td>
+<td>日频/周频</td>
+<td></td>
+<td></td>
+<td>用于估计σ_L；若无，可从利率曲线历史推导或用cap波动率</td>
+</tr>
+<tr>
+<td>历史利率曲线</td>
+<td>各期限利率的历史时间序列</td>
+<td>Phase 1 - LMM参数估计（备选）</td>
+<td>LIBOR Market Model（备选）</td>
+<td>2020-2024（或3-5年）</td>
+<td>日频/周频</td>
+<td></td>
+<td></td>
+<td>若无直接远期利率，可从此推导</td>
+</tr>
+<tr>
+<td><strong>第四步：相关性数据（需从历史数据计算）</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ρ_SFX相关性</td>
+<td>SX5E与EUR/USD的历史相关系数</td>
+<td>Phase 1 - 相关性结构</td>
+<td>所有方法</td>
+<td>从历史数据计算</td>
+<td>-</td>
+<td>自行计算</td>
+<td></td>
+<td>从SX5E价格和EUR/USD汇率的历史序列计算收益率相关性；<strong>依赖"SX5E价格"和"EUR/USD汇率"数据</strong></td>
+</tr>
+<tr>
+<td>ρ_SL相关性</td>
+<td>SX5E与USD短期利率的历史相关系数</td>
+<td>Phase 1 - 相关性结构</td>
+<td>所有方法</td>
+<td>从历史数据计算</td>
+<td>-</td>
+<td>自行计算</td>
+<td></td>
+<td>从SX5E价格和3个月USD即期利率历史计算；<strong>依赖"SX5E价格"和"3个月USD即期利率"数据</strong></td>
+</tr>
+<tr>
+<td>ρ_LFX相关性</td>
+<td>USD短期利率与EUR/USD的历史相关系数</td>
+<td>Phase 1 - 相关性结构</td>
+<td>所有方法</td>
+<td>从历史数据计算</td>
+<td>-</td>
+<td>自行计算</td>
+<td></td>
+<td>从3个月USD即期利率和EUR/USD汇率历史计算；<strong>依赖"3个月USD即期利率"和"EUR/USD汇率"数据</strong></td>
+</tr>
+<tr>
+<td><strong>第五步：合约参数（题目给定，无需获取）</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>T（到期日）</td>
+<td>3年（示例）</td>
+<td>Phase 0 - 合约设定</td>
+<td>所有方法</td>
+<td>-</td>
+<td>-</td>
+<td>题目</td>
+<td>✓</td>
+<td>Maturity date</td>
+</tr>
+<tr>
+<td>Δ（结算延迟）</td>
+<td>0.25年（3个月）</td>
+<td>Phase 0 - 合约设定</td>
+<td>所有方法</td>
+<td>-</td>
+<td>-</td>
+<td>题目</td>
+<td>✓</td>
+<td>Settlement delay</td>
+</tr>
+<tr>
+<td>k（股指行权价）</td>
+<td>1.00（示例）</td>
+<td>Phase 0 - 合约设定</td>
+<td>所有方法</td>
+<td>-</td>
+<td>-</td>
+<td>题目</td>
+<td>✓</td>
+<td>相对行权价</td>
+</tr>
+<tr>
+<td>k'（利率行权价）</td>
+<td>1.00（示例）</td>
+<td>Phase 0 - 合约设定</td>
+<td>所有方法</td>
+<td>-</td>
+<td>-</td>
+<td>题目</td>
+<td>✓</td>
+<td>相对行权价</td>
+</tr>
+<tr>
+<td>N（名义本金）</td>
+<td>1,000,000 USD（示例）</td>
+<td>Phase 0 - 合约设定</td>
+<td>所有方法</td>
+<td>-</td>
+<td>-</td>
+<td>题目</td>
+<td>✓</td>
+<td>Notional amount</td>
+</tr>
+<tr>
+<td><strong>第六步：贴现数据</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>贴现利率</td>
+<td>3.25年期零息利率或P(0,T+Δ)</td>
+<td>Phase 3 - Payoff贴现</td>
+<td>所有方法</td>
+<td>最近日期</td>
+<td>单一时点（最新）</td>
+<td></td>
+<td></td>
+<td>从USD利率曲线中提取或插值；用于将T+Δ时刻的payoff贴现到t=0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="数据依赖关系说明">数据依赖关系说明 </h2>
+<p><strong>某些数据是从其他数据计算得出的，不需要单独获取</strong></p>
+<table>
+<thead>
+<tr>
+<th>计算得出的数据</th>
+<th>依赖的原始数据</th>
+<th>含义</th>
+<th>计算方法</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>S(0)</strong></td>
+<td>SX5E价格（最新值）<br>EUR/USD汇率（最新值）</td>
+<td>Quanto后的SX5E初始美元价格</td>
+<td>• 取SX5E最新欧元价格<br>• 取EUR/USD最新汇率<br>• 计算：S(0) = SX5E × EUR/USD</td>
+<td>• Payoff公式的分母<br>• 蒙特卡洛模拟的初始值</td>
+</tr>
+<tr>
+<td><strong>L(0,T,T+Δ)</strong></td>
+<td>USD利率曲线</td>
+<td>t=0时刻的3年远期3个月USD利率</td>
+<td>• 从利率曲线获取3年期零息利率 r(3)<br>• 从利率曲线获取3.25年期零息利率 r(3.25)<br>• 计算：L(0,T,T+Δ) = [r(3.25)×3.25 - r(3)×3] / 0.25<br>• 或使用FRA市场直接报价</td>
+<td>• Payoff公式的分母<br>• LMM模型的初始值</td>
+</tr>
+<tr>
+<td><strong>σ_S（历史波动率）</strong></td>
+<td>SX5E价格（全序列）</td>
+<td>SX5E的年化波动率（备选方案）</td>
+<td>• 计算每日对数收益率：r_t = log(S_t / S_{t-1})<br>• 计算收益率标准差：σ_daily<br>• 年化：σ_S = σ_daily × √252</td>
+<td>• Quanto股指SDE的波动率参数<br>• 若无隐含波动率时使用</td>
+</tr>
+<tr>
+<td><strong>σ_FX（历史波动率）</strong></td>
+<td>EUR/USD汇率（全序列）</td>
+<td>EUR/USD的年化波动率（备选方案）</td>
+<td>• 计算每日对数收益率：r_t = log(FX_t / FX_{t-1})<br>• 计算收益率标准差：σ_daily<br>• 年化：σ_FX = σ_daily × √252</td>
+<td>• Quanto adjustment计算<br>• 若无隐含波动率时使用</td>
+</tr>
+<tr>
+<td><strong>σ_L（历史波动率）</strong></td>
+<td>远期利率历史<br>或历史利率曲线</td>
+<td>远期利率的波动率（备选方案）</td>
+<td>• 方法1（若有远期利率历史）：<br>&nbsp;&nbsp;- 计算L(t,T,T+Δ)的每日变化<br>&nbsp;&nbsp;- 计算变化的标准差并年化<br>• 方法2（从利率曲线推导）：<br>&nbsp;&nbsp;- 从历史利率曲线推导每日的L(t,T,T+Δ)<br>&nbsp;&nbsp;- 计算其波动率</td>
+<td>• LMM模型的波动率参数<br>• 若无cap隐含波动率时使用</td>
+</tr>
+<tr>
+<td><strong>ρ_SFX</strong></td>
+<td>SX5E价格（全序列）<br>EUR/USD汇率（全序列）</td>
+<td>SX5E（欧元股指）与EUR/USD汇率的相关性</td>
+<td>• 计算SX5E的对数收益率序列：<br>&nbsp;&nbsp;r_S(t) = log(SX5E_t / SX5E_{t-1})<br>• 计算EUR/USD的对数收益率序列：<br>&nbsp;&nbsp;r_FX(t) = log(FX_t / FX_{t-1})<br>• 计算两个收益率序列的Pearson相关系数：<br>&nbsp;&nbsp;ρ_SFX = corr(r_S, r_FX)</td>
+<td>• <strong>Quanto adjustment的核心参数</strong><br>• 用于调整quanto股指的drift：<br>&nbsp;&nbsp;-ρ_SFX × σ_S × σ_FX<br>• 构建相关性矩阵（Cholesky分解）</td>
+</tr>
+<tr>
+<td><strong>ρ_SL</strong></td>
+<td>SX5E价格（全序列）<br>3个月USD即期利率（全序列）</td>
+<td>SX5E（欧元股指）与USD短期利率的相关性</td>
+<td>• 计算SX5E的对数收益率序列：<br>&nbsp;&nbsp;r_S(t) = log(SX5E_t / SX5E_{t-1})<br>• 计算USD利率的变化序列：<br>&nbsp;&nbsp;Δr(t) = rate_t - rate_{t-1}<br>• 计算两者的Pearson相关系数：<br>&nbsp;&nbsp;ρ_SL = corr(r_S, Δr)</td>
+<td>• 构建相关性矩阵（Cholesky分解）<br>• 在蒙特卡洛模拟中生成相关的<br>&nbsp;&nbsp;布朗运动（股指与利率联动）</td>
+</tr>
+<tr>
+<td><strong>ρ_LFX</strong></td>
+<td>3个月USD即期利率（全序列）<br>EUR/USD汇率（全序列）</td>
+<td>USD短期利率与EUR/USD汇率的相关性</td>
+<td>• 计算USD利率的变化序列：<br>&nbsp;&nbsp;Δr(t) = rate_t - rate_{t-1}<br>• 计算EUR/USD的对数收益率序列：<br>&nbsp;&nbsp;r_FX(t) = log(FX_t / FX_{t-1})<br>• 计算两者的Pearson相关系数：<br>&nbsp;&nbsp;ρ_LFX = corr(Δr, r_FX)</td>
+<td>• 构建相关性矩阵（Cholesky分解）<br>• 在蒙特卡洛模拟中生成相关的<br>&nbsp;&nbsp;布朗运动（利率与汇率联动）</td>
+</tr>
+<tr>
+<td><strong>P(0,T+Δ)或贴现利率</strong></td>
+<td>USD利率曲线</td>
+<td>3.25年期零息债券价格或对应利率</td>
+<td>• 从利率曲线中直接读取3.25年期利率<br>• 若无该期限，使用插值法：<br>&nbsp;&nbsp;- 线性插值或样条插值<br>&nbsp;&nbsp;- 在3年和3.5年/5年利率之间插值<br>• 计算零息债券价格：<br>&nbsp;&nbsp;P(0,T+Δ) = exp(-r(3.25) × 3.25)</td>
+<td>• 将T+Δ时刻的payoff折现到t=0<br>• 计算衍生品的现值</td>
+</tr>
+</tbody>
+</table>
+<h2 id="相关性矩阵的构建">相关性矩阵的构建 </h2>
+<p>计算出三个相关系数后，需要构建3×3相关性矩阵用于蒙特卡洛模拟：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>         W_S    W_r/W_L    W_FX
+W_S      1      ρ_SL       ρ_SFX
+W_r/W_L  ρ_SL   1          ρ_LFX
+W_FX     ρ_SFX  ρ_LFX      1
+</code></pre><p>其中：</p>
+<ul>
+<li>W_S：驱动quanto股指S(t)的布朗运动</li>
+<li>W_r（Hull-White）或W_L（LMM）：驱动利率的布朗运动</li>
+<li>W_FX：驱动汇率的布朗运动（虽不直接出现在payoff，但影响quanto adjustment）</li>
+</ul>
+<p><strong>Cholesky分解</strong>：<br>
+将相关性矩阵进行Cholesky分解，得到下三角矩阵L，使得：</p>
+<ul>
+<li>ρ = L × L^T</li>
+<li>在模拟中：(W_S, W_r, W_FX)^T = L × (Z_1, Z_2, Z_3)^T</li>
+<li>其中Z_1, Z_2, Z_3是独立的标准正态随机变量</li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
