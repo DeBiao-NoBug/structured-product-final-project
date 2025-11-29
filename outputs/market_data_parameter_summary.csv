@@ -1,0 +1,36 @@
+Category,Parameter,Symbol,Value,Unit,Source,Notes
+Contract,Pricing Date,t=0,2021-02-15,Date,Configuration,Contract inception / valuation date
+Contract,Option Maturity,T,3.0,Years,Configuration,Time to option maturity
+Contract,Settlement Lag,Δ,0.25,Years,Configuration,Settlement lag after maturity
+Contract,Final Settlement,T+Δ,3.25,Years,Configuration,Final payment date
+Data Window,Lookback Period,,3,Years,Configuration,Window for parameter estimation
+Data Window,Start Date,,2018-02-16,Date,Calculated,t0 - lookback period
+Data Window,End Date,,2021-02-15,Date,Calculated,Same as pricing date t=0
+USD Zero Curve,3-Month Zero Rate,r(Δ),0.000400,Decimal,FRED API,0.0400% annual rate
+USD Zero Curve,3-Year Zero Rate,r(T),0.002000,Decimal,FRED API,0.2000% annual rate
+USD Zero Curve,3.25-Year Zero Rate,r(T+Δ),0.002303,Decimal,Interpolated,0.2303% annual rate
+USD Zero Curve,10-Year Zero Rate,r(10Y),0.012000,Decimal,FRED API,1.2000% annual rate
+USD Zero Curve,"Discount Factor P(0,Δ)","P(0,Δ)",0.99990000,Scalar,Calculated,Present value of $1 at t=Δ
+USD Zero Curve,"Discount Factor P(0,T)","P(0,T)",0.99401796,Scalar,Calculated,Present value of $1 at t=T
+USD Zero Curve,"Discount Factor P(0,T+Δ)","P(0,T+Δ)",0.99254254,Scalar,Calculated,Present value of $1 at t=T+Δ
+USD Zero Curve,Interpolation Method,,cubic_spline_interpolation,,SciPy,Cubic spline interpolation
+USD Zero Curve,Number of Market Points,,8,Count,FRED API,Treasury yields at 8 tenors
+SX5E Stock,Index Level at t=0,S(0),3734.20,Index Points,Yahoo Finance,Adj Close on 2021-02-15
+SX5E Stock,Annualized Volatility,σ_S,0.217959,Decimal,Calculated,21.80% from 748 daily returns
+SX5E Stock,Dividend Yield,q,0.0250,Decimal,Literature Estimate,2.50% typical for EURO STOXX 50
+SX5E Stock,Index Type,,Price Index,,Yahoo Finance,Price Index (not Total Return)
+SX5E Stock,Mean Daily Return,μ_S,0.000115,Decimal,Calculated,0.0115% per day
+SX5E Stock,Std Daily Return,σ_S_daily,0.013730,Decimal,Calculated,1.3730% per day
+SX5E Stock,Sample Size,n_S,748,Days,Yahoo Finance,From 2018-02-16 to 2021-02-15
+EUR/USD FX,Spot Rate at t=0,X(0),1.212209,EUR/USD,Yahoo Finance,1 EUR = 1.2122 USD on 2021-02-15
+EUR/USD FX,Annualized Volatility,σ_FX,0.065753,Decimal,Calculated,6.58% from 780 daily returns
+EUR/USD FX,Mean Daily Return,μ_FX,-0.000040,Decimal,Calculated,-0.0040% per day
+EUR/USD FX,Std Daily Return,σ_FX_daily,0.004142,Decimal,Calculated,0.4142% per day
+EUR/USD FX,Sample Size,n_FX,780,Days,Yahoo Finance,From 2018-02-16 to 2021-02-15
+Correlations,Stock-FX Correlation,ρ_SE,-0.0314,Scalar,Calculated,Estimated from 747 common trading days
+Correlations,Stock-Rate Correlation,ρ_Sr,0.3199,Scalar,Calculated,Stock returns vs 3Y Treasury rate changes
+Correlations,Rate-FX Correlation,ρ_rX,0.0306,Scalar,Calculated,3Y Treasury rate changes vs FX returns
+Correlations,Correlation Matrix,Σ,3×3 matrix,Matrix,Calculated,Positive definite correlation matrix
+Correlations,Cholesky Decomposition,L,Available,Matrix,Calculated,Lower triangular matrix for MC simulation
+Computation,Trading Days per Year,N_days,252,Days,Standard,Market convention for equity markets
+Computation,Annualization Factor,√N_days,15.8745,Scalar,Calculated,√252 = 15.87
